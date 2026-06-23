@@ -1,0 +1,23 @@
+data_root: "data/raw/mit_hf"
+cache_dir: "data/processed/mit_cache_full"
+manifest_csv: "data/interim/mit_manifest_full.csv"
+meta_csv: "data/interim/mit_meta.csv"
+
+n_cycles: 100
+intra_len: 64
+features: ["voltage_v", "current_a", "temperature_c", "capacity_ah"]
+
+model: "vanilla"
+d_model: 96
+n_layers: 3
+n_heads: 4
+epochs: 60
+batch_size: 8
+lr: 0.0003
+weight_decay: 0.001
+seed: 42
+
+eval_mode: "5fold"
+n_folds: 5
+
+out_dir: "experiments/run_5fold_vanilla"

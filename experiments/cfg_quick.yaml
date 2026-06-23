@@ -1,0 +1,28 @@
+# Quick smoke-train: small model, fast iters
+data_root: "data/raw/mit_hf"
+cache_dir: "data/processed/mit_cache_quick"
+manifest_csv: "data/interim/mit_manifest_quick.csv"
+meta_csv: "data/interim/mit_meta.csv"
+
+n_cycles: 50
+intra_len: 32
+features: ["voltage_v", "current_a", "temperature_c", "capacity_ah"]
+
+model: "hsmm_graph_game"
+d_model: 64
+n_layers: 2
+n_heads: 4
+hsmm_K: 4
+hsmm_D_max: 100
+use_graph: true
+
+epochs: 10
+batch_size: 4
+lr: 0.0003
+weight_decay: 1.0e-4
+seed: 42
+
+alpha_hsmm: 0.0
+alpha_aux_proto: 0.05
+
+out_dir: "experiments/run_quick"

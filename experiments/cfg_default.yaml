@@ -1,0 +1,30 @@
+# Default training configuration for HSMM-GraphGame on MIT/Stanford-Toyota data.
+# Override fields by passing --config and merging.
+
+data_root: "data/raw/mit_hf"
+cache_dir: "data/processed/mit_cache"
+manifest_csv: "data/interim/mit_manifest.csv"
+
+n_cycles: 100
+intra_len: 64
+features: ["voltage_v", "current_a", "temperature_c",
+           "discharge_capacity_ah", "charge_capacity_ah"]
+
+model: "hsmm_graph_game"
+d_model: 128
+n_layers: 4
+n_heads: 4
+hsmm_K: 4
+hsmm_D_max: 300
+use_graph: true
+
+epochs: 60
+batch_size: 8
+lr: 0.0003
+weight_decay: 1.0e-4
+seed: 42
+
+alpha_hsmm: 0.01
+alpha_aux_proto: 0.1
+
+out_dir: "experiments/run_default"
