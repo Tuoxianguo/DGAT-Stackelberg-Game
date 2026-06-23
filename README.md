@@ -3,6 +3,7 @@ DGAT++ &amp; Stackelberg Game for Li-ion Battery Early-Life Prediction and Fast-
 This repository contains the full source code, experiment scripts, configs and figures
 to reproduce every table and figure in the paper. It uses **only public datasets**
 (MIT/Stanford/Toyota Severson 2019 and HUST) — no proprietary data is required.
+![Uploading fig_graphical_abstract_2400x1200_600dpi.png…]()
 
 ---
 
