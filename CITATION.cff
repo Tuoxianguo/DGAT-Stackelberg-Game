@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "DGAT++ & Stackelberg Game for Li-ion Battery Early-Life Prediction and Fast-Charging Protocol Optimization"
+authors:
+  - family-names: "<First author surname>"
+    given-names: "<First author given name>"
+# - add the remaining authors here
+version: 1.0.0
+date-released: 2026-06-23
+license: MIT
+repository-code: "https://github.com/<user>/DGATplusplus-Battery"
+keywords:
+  - lithium-ion battery
+  - energy storage
+  - early-life prediction
+  - remaining useful life
+  - graph attention network
+  - Stackelberg game
+  - fast charging
+preferred-citation:
+  type: article
+  title: "Fast-charging protocol optimization and early-life prediction for lithium-ion batteries in EV and energy-storage systems: a joint DGAT++ and Stackelberg-game framework"
+  authors:
+    - family-names: "<First author surname>"
+      given-names: "<First author given name>"
+  journal: "Energy"
+  year: 2026
+  notes: "Under review. DOI will be added upon acceptance."

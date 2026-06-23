@@ -1,0 +1,41 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+.env
+
+# Data files (raw datasets - too large)
+data/raw/
+data/interim/
+*.mat
+*.h5
+*.hdf5
+*.pkl
+*.parquet
+
+# Experimental outputs
+runs/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+outputs/
+logs/
+
+# Editor
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Paper build artifacts
+paper/**/*.aux
+paper/**/*.log
+paper/**/*.bbl
+paper/**/*.blg
+paper/**/*.out
+paper/**/*.toc
+paper/**/_minted-*

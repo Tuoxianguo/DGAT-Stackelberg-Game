@@ -1,9 +1,20 @@
-# DGAT-Stackelberg-Game
-DGAT++ &amp; Stackelberg Game for Li-ion Battery Early-Life Prediction and Fast-Charging Protocol Optimization
+# DGAT++ & Stackelberg Game for Li-ion Battery Early-Life Prediction and Fast-Charging Protocol Optimization
+
+> Official code for the manuscript *"Fast-charging protocol optimization and early-life
+> prediction for lithium-ion batteries in EV and energy-storage systems: a joint DGAT++
+> and Stackelberg-game framework"* (submitted to **Energy**, Elsevier).
+
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.2%2B-ee4c2c.svg)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 This repository contains the full source code, experiment scripts, configs and figures
 to reproduce every table and figure in the paper. It uses **only public datasets**
 (MIT/Stanford/Toyota Severson 2019 and HUST) — no proprietary data is required.
 
+<p align="center">
+  <img src="submission/Graphical_Abstract.png" alt="Graphical abstract: DGAT++ encoder and Stackelberg-game protocol optimizer for Li-ion battery early-life prediction and fast-charging optimization" width="900">
+</p>
 
 ---
 
