@@ -20,15 +20,13 @@ to reproduce every table and figure in the paper. It uses **only public datasets
 
 ## Highlights
 
-- **DGAT++ encoder** — Cross-Window Dense Skip Connections on top of the Dynamic Graph
-  Attention-Transformer. On the canonical Severson benchmark (124 LFP cells, 72 protocols),
-  5-fold CV early-life-prediction **MAPE = 7.90% / RMSE = 122.1 cycles** (6-seed × 5-TTA ensemble).
-- **Stackelberg-game protocol optimizer** — first leader–follower bilevel game with implicit
-  differentiation for fast-charging design: **+15% Hypervolume** and **20× faster** than Bayesian Optimization.
-- **Honest, rigorous evaluation** — 5-fold × multi-seed × TTA, 5 baseline families + 2025-SOTA
-  re-implementations, paired t-test / Wilcoxon significance, plus reported negative findings.
-- **Deployable** — 12 ms single-cell / 60 ms ensemble inference, well below typical BMS control
-  cycles (100–1000 ms); INT8 model ≈ 5.8 MB.
+We propose DGAT++, a cross-window dense-skip graph-attention encoder that reduces the early-life-prediction MAPE from 16.46% to 7.90% under 5-fold cross-validation on the MIT Severson dataset.
+
+For the first time, a Stackelberg game with implicit differentiation is applied to lithium-ion battery fast-charging protocol optimization, improving the Hypervolume by 15% and accelerating the solution by 20×.
+
+Systematic synergistic ablation demonstrates that upgrading the core encoder architecture improves performance more than stacking auxiliary modules such as HSMM/HGNN on a plain backbone, and that the HGNN serves as a "stability regularizer" for in-distribution tasks.
+
+Single-cell inference takes 12 ms (60 ms for the ensemble), far below the typical BMS control cycle (100–1000 ms), enabling direct embedded deployment in the battery-management units of electric vehicles and energy-storage systems.
 
 ## Main results (Task A: early-life prediction, MIT 5-fold CV)
 
